@@ -31,6 +31,7 @@ TARGET_2ND_CPU_VARIANT := cortex-a53
 # Build
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+SELINUX_IGNORE_NEVERALLOWS := true
 
 # Kernel
 TARGET_KERNEL_CONFIG := oxygen_defconfig
@@ -153,7 +154,7 @@ BOARD_SHIPPING_API_LEVEL := 30
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(COMMON_PATH)/framework_compatibility_matrix.xml \
-    vendor/lineage/config/device_framework_matrix.xml
+    vendor/octavi/config/device_framework_matrix.xml
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(COMMON_PATH)/framework_manifest.xml
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest_k4.9.xml

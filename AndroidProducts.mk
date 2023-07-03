@@ -1,13 +1,13 @@
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2021 The octaviOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_oxygen.mk
+    $(LOCAL_DIR)/octavi_oxygen.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_oxygen-user \
-    lineage_oxygen-userdebug \
-    lineage_oxygen-eng
+    octavi_oxygen-user \
+    octavi_oxygen-userdebug \
+    octavi_oxygen-eng
