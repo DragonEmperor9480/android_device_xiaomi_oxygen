@@ -18,6 +18,31 @@ $(call inherit-product, device/xiaomi/oxygen/device.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
+# Device config
+TARGET_HAS_UDFPS := true
+TARGET_ENABLE_BLUR := true
+TARGET_EXCLUDES_AUDIOFX := false
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+# GAPPS config
+# 0 - NO GAPPS (default)
+# 1 - CORE GAPPS
+# 2 - FULL GAPPS
+WITH_GAPPS := 1
+
+# Use Google Telephony pack (Dialer, Contacts, Messaging) on GAPPS builds
+# Default = true
+TARGET_USE_GOOGLE_TELEPHONY := true
+
+# Debugging
+# Default = false
+TARGET_INCLUDE_MATLOG := false
+TARGET_DEFAULT_ADB_ENABLED := true
+
+# Maintainer
+ALPHA_BUILD_TYPE := Unofficial
+ALPHA_MAINTAINER := Amrutesh
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := oxygen
 PRODUCT_NAME := lineage_oxygen
